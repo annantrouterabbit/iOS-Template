@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9527.1" systemVersion="14F1713" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9525.1"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainMenuViewController">
+            <connections>
+                <outlet property="mainMenuHeader" destination="iN0-l3-epB" id="R7W-jj-MpF"/>
+                <outlet property="userAccountEmail" destination="AqB-1U-6Ev" id="JL6-HW-jsf"/>
+                <outlet property="userAccountFullName" destination="lVa-mN-Tb0" id="lJ4-Oo-fE2"/>
+                <outlet property="userAccountHeaderImage" destination="gtF-eb-DEC" id="hkf-Hm-9e8"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="385" height="200"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gtF-eb-DEC">
+                    <rect key="frame" x="127" y="20" width="130" height="130"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="130" id="5h8-Ba-dJP"/>
+                        <constraint firstAttribute="width" secondItem="gtF-eb-DEC" secondAttribute="height" multiplier="1:1" id="SWN-Yz-wn3"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lVa-mN-Tb0">
+                    <rect key="frame" x="0.0" y="150" width="385" height="24"/>
+                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AqB-1U-6Ev">
+                    <rect key="frame" x="0.0" y="174" width="385" height="20"/>
+                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="14"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="AqB-1U-6Ev" secondAttribute="trailing" id="0Zo-Ck-aj0"/>
+                <constraint firstItem="lVa-mN-Tb0" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="72C-zx-BOf"/>
+                <constraint firstAttribute="centerX" secondItem="lVa-mN-Tb0" secondAttribute="centerX" id="7MU-VY-hjk"/>
+                <constraint firstAttribute="centerX" secondItem="AqB-1U-6Ev" secondAttribute="centerX" id="B0R-bI-dRf"/>
+                <constraint firstAttribute="trailing" secondItem="lVa-mN-Tb0" secondAttribute="trailing" id="OJ5-cp-4S0"/>
+                <constraint firstItem="lVa-mN-Tb0" firstAttribute="top" secondItem="gtF-eb-DEC" secondAttribute="bottom" id="UxM-Qj-75M"/>
+                <constraint firstAttribute="centerX" secondItem="gtF-eb-DEC" secondAttribute="centerX" id="a36-ki-X6G"/>
+                <constraint firstItem="AqB-1U-6Ev" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="dcZ-nn-XTJ"/>
+                <constraint firstItem="gtF-eb-DEC" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="topMargin" multiplier="2.5" id="i9b-SU-Iby"/>
+                <constraint firstItem="AqB-1U-6Ev" firstAttribute="top" secondItem="lVa-mN-Tb0" secondAttribute="bottom" id="qYT-QG-pVS"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="AqB-1U-6Ev" secondAttribute="bottom" id="tSf-AH-a0M"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="272.5" y="217.5"/>
+        </view>
+    </objects>
+</document>

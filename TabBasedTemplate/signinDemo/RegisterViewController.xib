@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9527.1" systemVersion="14F1713" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9525.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterViewController">
+            <connections>
+                <outlet property="contentView" destination="Ivd-ZP-cdQ" id="E1O-c9-00p"/>
+                <outlet property="emailAddress" destination="Grt-mD-PrF" id="Rbt-Hc-TwV"/>
+                <outlet property="fbLoginButton" destination="Qrt-VC-nNL" id="aG2-KS-8FT"/>
+                <outlet property="firstName" destination="t3t-hL-coV" id="cLh-Rt-PRB"/>
+                <outlet property="googleSignInButton" destination="frA-YO-u1f" id="ycC-Lg-UNa"/>
+                <outlet property="lastName" destination="hUY-sw-XXE" id="nSt-Jv-cG5"/>
+                <outlet property="password" destination="Fif-jS-8dT" id="Qfu-Jt-hAR"/>
+                <outlet property="reTypePassword" destination="SaA-jK-wwS" id="lgG-8W-Jut"/>
+                <outlet property="registerButton" destination="dfK-0l-5TR" id="Vff-bp-RhG"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VRj-vs-GWj">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ivd-ZP-cdQ" userLabel="Content View">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            <subviews>
+                                <textField opaque="NO" clipsSubviews="YES" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t3t-hL-coV">
+                                    <rect key="frame" x="29" y="65" width="542" height="30"/>
+                                    <nil key="textColor"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                </textField>
+                                <textField opaque="NO" clipsSubviews="YES" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hUY-sw-XXE">
+                                    <rect key="frame" x="29" y="117" width="542" height="30"/>
+                                    <nil key="textColor"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                </textField>
+                                <textField opaque="NO" clipsSubviews="YES" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Address" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Grt-mD-PrF">
+                                    <rect key="frame" x="29" y="168" width="542" height="30"/>
+                                    <nil key="textColor"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                </textField>
+                                <textField opaque="NO" clipsSubviews="YES" tag="103" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fif-jS-8dT">
+                                    <rect key="frame" x="29" y="219" width="542" height="30"/>
+                                    <nil key="textColor"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="done"/>
+                                </textField>
+                                <textField opaque="NO" clipsSubviews="YES" tag="104" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Re-enter Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SaA-jK-wwS">
+                                    <rect key="frame" x="29" y="271" width="542" height="30"/>
+                                    <nil key="textColor"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="done"/>
+                                </textField>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dfK-0l-5TR">
+                                    <rect key="frame" x="63" y="337" width="474" height="30"/>
+                                    <color key="backgroundColor" red="0.36470589040000001" green="0.82352948189999997" blue="0.8980392814" alpha="1" colorSpace="deviceRGB"/>
+                                    <state key="normal" title="Register">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="registerClicked:" destination="-1" eventType="touchUpInside" id="JZe-Df-6C7"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="frA-YO-u1f" customClass="GIDSignInButton">
+                                    <rect key="frame" x="275" y="417" width="50" height="30"/>
+                                    <state key="normal" title="Google"/>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qrt-VC-nNL" customClass="FBSDKLoginButton">
+                                    <rect key="frame" x="266" y="462" width="67" height="30"/>
+                                    <state key="normal" title="Facebook"/>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" red="0.13725490870000001" green="0.69019609689999994" blue="0.90588241820000004" alpha="1" colorSpace="deviceRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="Fif-jS-8dT" secondAttribute="trailing" constant="29" id="2os-fT-d8W"/>
+                                <constraint firstItem="hUY-sw-XXE" firstAttribute="top" secondItem="t3t-hL-coV" secondAttribute="bottom" constant="22" id="6lY-AF-gHl"/>
+                                <constraint firstItem="Grt-mD-PrF" firstAttribute="leading" secondItem="Ivd-ZP-cdQ" secondAttribute="leading" constant="29" id="9w9-EW-ftJ"/>
+                                <constraint firstAttribute="trailing" secondItem="t3t-hL-coV" secondAttribute="trailing" constant="29" id="B3T-6l-usy"/>
+                                <constraint firstItem="SaA-jK-wwS" firstAttribute="leading" secondItem="Ivd-ZP-cdQ" secondAttribute="leading" constant="29" id="GC9-c3-r5V"/>
+                                <constraint firstItem="SaA-jK-wwS" firstAttribute="top" secondItem="Fif-jS-8dT" secondAttribute="bottom" constant="22" id="H29-zn-1H7"/>
+                                <constraint firstItem="Fif-jS-8dT" firstAttribute="top" secondItem="Grt-mD-PrF" secondAttribute="bottom" constant="21" id="JXD-68-AaC"/>
+                                <constraint firstItem="dfK-0l-5TR" firstAttribute="leading" secondItem="Ivd-ZP-cdQ" secondAttribute="leading" constant="63" id="NW4-DE-Ohk"/>
+                                <constraint firstItem="frA-YO-u1f" firstAttribute="top" secondItem="dfK-0l-5TR" secondAttribute="bottom" constant="50" id="P64-5a-aPH"/>
+                                <constraint firstItem="t3t-hL-coV" firstAttribute="top" secondItem="Ivd-ZP-cdQ" secondAttribute="top" constant="65" id="Prh-zH-Pu5"/>
+                                <constraint firstAttribute="trailing" secondItem="dfK-0l-5TR" secondAttribute="trailing" constant="63" id="T5Y-sZ-gH9"/>
+                                <constraint firstItem="Qrt-VC-nNL" firstAttribute="top" secondItem="frA-YO-u1f" secondAttribute="bottom" constant="15" id="WMr-VM-DRF"/>
+                                <constraint firstItem="dfK-0l-5TR" firstAttribute="top" secondItem="SaA-jK-wwS" secondAttribute="bottom" constant="36" id="XEi-so-bnj"/>
+                                <constraint firstItem="Fif-jS-8dT" firstAttribute="leading" secondItem="Ivd-ZP-cdQ" secondAttribute="leading" constant="29" id="aMz-Yl-VAW"/>
+                                <constraint firstAttribute="trailing" secondItem="SaA-jK-wwS" secondAttribute="trailing" constant="29" id="hcy-Ew-dfQ"/>
+                                <constraint firstItem="Qrt-VC-nNL" firstAttribute="centerX" secondItem="Ivd-ZP-cdQ" secondAttribute="centerX" id="ieG-UP-yNI"/>
+                                <constraint firstItem="t3t-hL-coV" firstAttribute="leading" secondItem="Ivd-ZP-cdQ" secondAttribute="leading" constant="29" id="jfU-TX-waS"/>
+                                <constraint firstItem="hUY-sw-XXE" firstAttribute="leading" secondItem="Ivd-ZP-cdQ" secondAttribute="leading" constant="29" id="nek-r6-ibt"/>
+                                <constraint firstAttribute="trailing" secondItem="hUY-sw-XXE" secondAttribute="trailing" constant="29" id="pqu-So-oVc"/>
+                                <constraint firstAttribute="trailing" secondItem="Grt-mD-PrF" secondAttribute="trailing" constant="29" id="uxl-1S-8ZT"/>
+                                <constraint firstItem="frA-YO-u1f" firstAttribute="centerX" secondItem="Ivd-ZP-cdQ" secondAttribute="centerX" id="voF-n6-CdU"/>
+                                <constraint firstItem="Grt-mD-PrF" firstAttribute="top" secondItem="hUY-sw-XXE" secondAttribute="bottom" constant="21" id="wRA-kv-ZKl"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="Ivd-ZP-cdQ" secondAttribute="bottom" id="2O8-Va-oAh"/>
+                        <constraint firstItem="Ivd-ZP-cdQ" firstAttribute="centerX" secondItem="VRj-vs-GWj" secondAttribute="centerX" id="4fS-0c-Ygo"/>
+                        <constraint firstItem="Ivd-ZP-cdQ" firstAttribute="leading" secondItem="VRj-vs-GWj" secondAttribute="leading" id="AUT-zY-jv9"/>
+                        <constraint firstItem="Ivd-ZP-cdQ" firstAttribute="centerX" secondItem="VRj-vs-GWj" secondAttribute="centerX" id="IJr-bq-RR7"/>
+                        <constraint firstItem="Ivd-ZP-cdQ" firstAttribute="top" secondItem="VRj-vs-GWj" secondAttribute="top" id="MpZ-UL-n4i"/>
+                        <constraint firstItem="Ivd-ZP-cdQ" firstAttribute="centerY" secondItem="VRj-vs-GWj" secondAttribute="centerY" id="Qq1-Mo-C8E"/>
+                        <constraint firstAttribute="trailing" secondItem="Ivd-ZP-cdQ" secondAttribute="trailing" id="hkA-4u-qm8"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="0.13725490870000001" green="0.69019609689999994" blue="0.90588241820000004" alpha="1" colorSpace="deviceRGB"/>
+            <constraints>
+                <constraint firstItem="VRj-vs-GWj" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="1EH-Xe-0rU"/>
+                <constraint firstItem="VRj-vs-GWj" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" id="7Tx-Gb-eCI"/>
+                <constraint firstItem="VRj-vs-GWj" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Hmd-zT-yej"/>
+                <constraint firstAttribute="trailing" secondItem="VRj-vs-GWj" secondAttribute="trailing" id="rvS-rv-QCd"/>
+                <constraint firstAttribute="bottom" secondItem="VRj-vs-GWj" secondAttribute="bottom" id="x81-UB-13B"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
