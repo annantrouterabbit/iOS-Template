@@ -1,1 +1,1 @@
-ios-templage
+ios-template
