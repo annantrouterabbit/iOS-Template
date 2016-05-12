@@ -1,0 +1,6 @@
+framework module iosWalkthrough {
+  umbrella header "iosWalkthrough.h"
+
+  export *
+  module * { export * }
+}
