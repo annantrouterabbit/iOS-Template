@@ -7,10 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1630C427271914B85F6839B4 /* libPods-signinDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B72664EC31F15A992DC67419 /* libPods-signinDemo.a */; };
+		22AC29BB744044E2FF66E1C7 /* libPods-signinDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F37749FC57E99ECF958B846F /* libPods-signinDemo.a */; };
 		2F7EEE381CE2FFEE009A6F89 /* OAuthHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F7EEE371CE2FFEE009A6F89 /* OAuthHandler.m */; };
 		2F7EEE471CE34496009A6F89 /* FormValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F7EEE441CE34496009A6F89 /* FormValidator.m */; };
 		2F7EEE481CE34496009A6F89 /* ValidationItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F7EEE461CE34496009A6F89 /* ValidationItem.m */; };
+		2F87F3AC1CE472F200181826 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2F87F3AB1CE472F200181826 /* GoogleService-Info.plist */; };
+		2F87F3AF1CE4842600181826 /* StripeHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F87F3AE1CE4842600181826 /* StripeHandler.m */; };
+		2F87F3B41CE498B500181826 /* StripePaymentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F87F3B21CE498B500181826 /* StripePaymentViewController.m */; };
+		2F87F3B51CE498B500181826 /* StripePaymentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F87F3B31CE498B500181826 /* StripePaymentViewController.xib */; };
+		2F87F3B81CE4F1F000181826 /* PassKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F87F3B71CE4F1F000181826 /* PassKit.framework */; };
 		2F8EEE771CE0CC0D00223AA1 /* MemberListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F8EEE751CE0CC0D00223AA1 /* MemberListViewController.m */; };
 		2F8EEE781CE0CC0D00223AA1 /* MemberListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F8EEE761CE0CC0D00223AA1 /* MemberListViewController.xib */; };
 		2F8EEE7D1CE1F01E00223AA1 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F8EEE7B1CE1F01E00223AA1 /* RegisterViewController.m */; };
@@ -37,22 +42,30 @@
 		2FA73F2A1CD9C51700ECCEDD /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FA73F1F1CD9C51700ECCEDD /* Security.framework */; };
 		2FA73F2B1CD9C51700ECCEDD /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FA73F201CD9C51700ECCEDD /* SystemConfiguration.framework */; };
 		2FA73F2C1CD9C51700ECCEDD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FA73F211CD9C51700ECCEDD /* UIKit.framework */; };
-		2FA73F2F1CDA138800ECCEDD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2FA73F2E1CDA138800ECCEDD /* GoogleService-Info.plist */; };
 		2FA73F321CDB346800ECCEDD /* UtilityClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA73F311CDB346800ECCEDD /* UtilityClass.m */; };
 		2FA73F411CDC76E300ECCEDD /* NavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA73F401CDC76E300ECCEDD /* NavigationBar.m */; };
+		2FB5ED831CE60F010075D2E1 /* PayPalHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FB5ED821CE60F010075D2E1 /* PayPalHandler.m */; };
+		2FB5ED911CE614220075D2E1 /* PayPalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FB5ED8F1CE614220075D2E1 /* PayPalViewController.m */; };
+		2FB5ED921CE614220075D2E1 /* PayPalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FB5ED901CE614220075D2E1 /* PayPalViewController.xib */; };
 		2FC5B7651CE0A0EE00A821FC /* MainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FC5B7631CE0A0EE00A821FC /* MainMenuViewController.m */; };
 		2FC5B7661CE0A0EE00A821FC /* MainMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FC5B7641CE0A0EE00A821FC /* MainMenuViewController.xib */; };
 		2FC5B7681CE0A5B100A821FC /* MainMenuHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FC5B7671CE0A5B100A821FC /* MainMenuHeader.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2928F23525C328C21798D6CD /* Pods-signinDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-signinDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-signinDemo/Pods-signinDemo.release.xcconfig"; sourceTree = "<group>"; };
 		2F7EEE361CE2FFEE009A6F89 /* OAuthHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAuthHandler.h; sourceTree = "<group>"; };
 		2F7EEE371CE2FFEE009A6F89 /* OAuthHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAuthHandler.m; sourceTree = "<group>"; };
 		2F7EEE431CE34496009A6F89 /* FormValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormValidator.h; sourceTree = "<group>"; };
 		2F7EEE441CE34496009A6F89 /* FormValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FormValidator.m; sourceTree = "<group>"; };
 		2F7EEE451CE34496009A6F89 /* ValidationItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ValidationItem.h; sourceTree = "<group>"; };
 		2F7EEE461CE34496009A6F89 /* ValidationItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ValidationItem.m; sourceTree = "<group>"; };
+		2F87F3AB1CE472F200181826 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2F87F3AD1CE4842600181826 /* StripeHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StripeHandler.h; sourceTree = "<group>"; };
+		2F87F3AE1CE4842600181826 /* StripeHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StripeHandler.m; sourceTree = "<group>"; };
+		2F87F3B11CE498B500181826 /* StripePaymentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StripePaymentViewController.h; sourceTree = "<group>"; };
+		2F87F3B21CE498B500181826 /* StripePaymentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StripePaymentViewController.m; sourceTree = "<group>"; };
+		2F87F3B31CE498B500181826 /* StripePaymentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StripePaymentViewController.xib; sourceTree = "<group>"; };
+		2F87F3B71CE4F1F000181826 /* PassKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PassKit.framework; path = System/Library/Frameworks/PassKit.framework; sourceTree = SDKROOT; };
 		2F8EEE741CE0CC0D00223AA1 /* MemberListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemberListViewController.h; sourceTree = "<group>"; };
 		2F8EEE751CE0CC0D00223AA1 /* MemberListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemberListViewController.m; sourceTree = "<group>"; };
 		2F8EEE761CE0CC0D00223AA1 /* MemberListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MemberListViewController.xib; sourceTree = "<group>"; };
@@ -88,17 +101,22 @@
 		2FA73F1F1CD9C51700ECCEDD /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		2FA73F201CD9C51700ECCEDD /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		2FA73F211CD9C51700ECCEDD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		2FA73F2E1CDA138800ECCEDD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2FA73F301CDB346800ECCEDD /* UtilityClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilityClass.h; sourceTree = "<group>"; };
 		2FA73F311CDB346800ECCEDD /* UtilityClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UtilityClass.m; sourceTree = "<group>"; };
 		2FA73F3F1CDC76E300ECCEDD /* NavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationBar.h; sourceTree = "<group>"; };
 		2FA73F401CDC76E300ECCEDD /* NavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationBar.m; sourceTree = "<group>"; };
+		2FB5ED811CE60F010075D2E1 /* PayPalHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalHandler.h; sourceTree = "<group>"; };
+		2FB5ED821CE60F010075D2E1 /* PayPalHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PayPalHandler.m; sourceTree = "<group>"; };
+		2FB5ED8E1CE614220075D2E1 /* PayPalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalViewController.h; sourceTree = "<group>"; };
+		2FB5ED8F1CE614220075D2E1 /* PayPalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PayPalViewController.m; sourceTree = "<group>"; };
+		2FB5ED901CE614220075D2E1 /* PayPalViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PayPalViewController.xib; sourceTree = "<group>"; };
 		2FC5B7621CE0A0EE00A821FC /* MainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuViewController.h; sourceTree = "<group>"; };
 		2FC5B7631CE0A0EE00A821FC /* MainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuViewController.m; sourceTree = "<group>"; };
 		2FC5B7641CE0A0EE00A821FC /* MainMenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenuViewController.xib; sourceTree = "<group>"; };
 		2FC5B7671CE0A5B100A821FC /* MainMenuHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenuHeader.xib; sourceTree = "<group>"; };
-		A5F8E266B06FB196527D9AB4 /* Pods-signinDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-signinDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-signinDemo/Pods-signinDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		B72664EC31F15A992DC67419 /* libPods-signinDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-signinDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		60D0614A6190A567FF13FD05 /* Pods-signinDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-signinDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-signinDemo/Pods-signinDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		A1AEC044A1D78DEB8F581C40 /* Pods-signinDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-signinDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-signinDemo/Pods-signinDemo.release.xcconfig"; sourceTree = "<group>"; };
+		F37749FC57E99ECF958B846F /* libPods-signinDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-signinDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,24 +124,34 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FA73F281CD9C51700ECCEDD /* Foundation.framework in Frameworks */,
+				2F87F3B81CE4F1F000181826 /* PassKit.framework in Frameworks */,
+				2FA73F2A1CD9C51700ECCEDD /* Security.framework in Frameworks */,
 				2FA73F221CD9C51700ECCEDD /* AddressBook.framework in Frameworks */,
 				2FA73F231CD9C51700ECCEDD /* AssetsLibrary.framework in Frameworks */,
 				2FA73F241CD9C51700ECCEDD /* CoreGraphics.framework in Frameworks */,
 				2FA73F251CD9C51700ECCEDD /* CoreLocation.framework in Frameworks */,
 				2FA73F261CD9C51700ECCEDD /* CoreMotion.framework in Frameworks */,
 				2FA73F271CD9C51700ECCEDD /* CoreText.framework in Frameworks */,
-				2FA73F281CD9C51700ECCEDD /* Foundation.framework in Frameworks */,
 				2FA73F291CD9C51700ECCEDD /* MediaPlayer.framework in Frameworks */,
-				2FA73F2A1CD9C51700ECCEDD /* Security.framework in Frameworks */,
 				2FA73F2B1CD9C51700ECCEDD /* SystemConfiguration.framework in Frameworks */,
 				2FA73F2C1CD9C51700ECCEDD /* UIKit.framework in Frameworks */,
-				1630C427271914B85F6839B4 /* libPods-signinDemo.a in Frameworks */,
+				22AC29BB744044E2FF66E1C7 /* libPods-signinDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C1EA1A607EC2A77DA34945B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2F87F3B71CE4F1F000181826 /* PassKit.framework */,
+				F37749FC57E99ECF958B846F /* libPods-signinDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2F7EEE391CE319B0009A6F89 /* OAuthHandler */ = {
 			isa = PBXGroup;
 			children = (
@@ -142,6 +170,27 @@
 				2F7EEE461CE34496009A6F89 /* ValidationItem.m */,
 			);
 			name = FormValidation;
+			sourceTree = "<group>";
+		};
+		2F87F3B01CE4843300181826 /* PaymentGatewayHandler */ = {
+			isa = PBXGroup;
+			children = (
+				2F87F3AD1CE4842600181826 /* StripeHandler.h */,
+				2F87F3AE1CE4842600181826 /* StripeHandler.m */,
+				2FB5ED811CE60F010075D2E1 /* PayPalHandler.h */,
+				2FB5ED821CE60F010075D2E1 /* PayPalHandler.m */,
+			);
+			name = PaymentGatewayHandler;
+			sourceTree = "<group>";
+		};
+		2F87F3B61CE498F400181826 /* StripePayment */ = {
+			isa = PBXGroup;
+			children = (
+				2F87F3B11CE498B500181826 /* StripePaymentViewController.h */,
+				2F87F3B21CE498B500181826 /* StripePaymentViewController.m */,
+				2F87F3B31CE498B500181826 /* StripePaymentViewController.xib */,
+			);
+			name = StripePayment;
 			sourceTree = "<group>";
 		};
 		2F8EEE791CE0CC2C00223AA1 /* MemberList */ = {
@@ -170,8 +219,8 @@
 				2FA73F2D1CD9C5BF00ECCEDD /* frameworks */,
 				2FA73ED31CD8B15A00ECCEDD /* signinDemo */,
 				2FA73ED21CD8B15A00ECCEDD /* Products */,
-				C2A618E24090EDB512D4EF73 /* Pods */,
-				5DFD3A1145E5688DF2E7434F /* Frameworks */,
+				CCD9776931212C156413FDC3 /* Pods */,
+				2C1EA1A607EC2A77DA34945B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -186,6 +235,7 @@
 		2FA73ED31CD8B15A00ECCEDD /* signinDemo */ = {
 			isa = PBXGroup;
 			children = (
+				2FB5ED931CE614370075D2E1 /* PayPalPayment */,
 				2F7EEE421CE34398009A6F89 /* FormValidation */,
 				2FA73EF61CD8B30B00ECCEDD /* Login */,
 				2FA73F0F1CD90E6E00ECCEDD /* Home */,
@@ -196,7 +246,7 @@
 				2FA73EDD1CD8B15A00ECCEDD /* Main.storyboard */,
 				2FA73EE01CD8B15A00ECCEDD /* Assets.xcassets */,
 				2FA73EE21CD8B15A00ECCEDD /* LaunchScreen.storyboard */,
-				2FA73F2E1CDA138800ECCEDD /* GoogleService-Info.plist */,
+				2F87F3AB1CE472F200181826 /* GoogleService-Info.plist */,
 				2FA73EE51CD8B15A00ECCEDD /* Info.plist */,
 				2FA73ED41CD8B15A00ECCEDD /* Supporting Files */,
 				2FA73F091CD9067800ECCEDD /* validation */,
@@ -206,6 +256,8 @@
 				2F8EEE791CE0CC2C00223AA1 /* MemberList */,
 				2F8EEE7F1CE1F2AB00223AA1 /* Register */,
 				2F7EEE391CE319B0009A6F89 /* OAuthHandler */,
+				2F87F3B01CE4843300181826 /* PaymentGatewayHandler */,
+				2F87F3B61CE498F400181826 /* StripePayment */,
 			);
 			path = signinDemo;
 			sourceTree = "<group>";
@@ -283,6 +335,16 @@
 			name = NavigationBar;
 			sourceTree = "<group>";
 		};
+		2FB5ED931CE614370075D2E1 /* PayPalPayment */ = {
+			isa = PBXGroup;
+			children = (
+				2FB5ED8E1CE614220075D2E1 /* PayPalViewController.h */,
+				2FB5ED8F1CE614220075D2E1 /* PayPalViewController.m */,
+				2FB5ED901CE614220075D2E1 /* PayPalViewController.xib */,
+			);
+			name = PayPalPayment;
+			sourceTree = "<group>";
+		};
 		2FC5B75F1CE09C1F00A821FC /* MainMenu */ = {
 			isa = PBXGroup;
 			children = (
@@ -294,19 +356,11 @@
 			name = MainMenu;
 			sourceTree = "<group>";
 		};
-		5DFD3A1145E5688DF2E7434F /* Frameworks */ = {
+		CCD9776931212C156413FDC3 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				B72664EC31F15A992DC67419 /* libPods-signinDemo.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		C2A618E24090EDB512D4EF73 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				A5F8E266B06FB196527D9AB4 /* Pods-signinDemo.debug.xcconfig */,
-				2928F23525C328C21798D6CD /* Pods-signinDemo.release.xcconfig */,
+				60D0614A6190A567FF13FD05 /* Pods-signinDemo.debug.xcconfig */,
+				A1AEC044A1D78DEB8F581C40 /* Pods-signinDemo.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -318,12 +372,21 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2FA73EE81CD8B15A00ECCEDD /* Build configuration list for PBXNativeTarget "signinDemo" */;
 			buildPhases = (
-				EDC0A407BCA901D6FDC86BDE /* Check Pods Manifest.lock */,
+				55A3CAAEAB4CC2215D88CB67 /* 📦 Check Pods Manifest.lock */,
+				807A163CCA119D7C43473B07 /*  Check Pods Manifest.lock */,
+				CA9C5D677C477B595F1F5822 /*  Check Pods Manifest.lock */,
+				4639F9C9E100D8D85C4D87F9 /*  Check Pods Manifest.lock */,
 				2FA73ECD1CD8B15A00ECCEDD /* Sources */,
 				2FA73ECE1CD8B15A00ECCEDD /* Frameworks */,
 				2FA73ECF1CD8B15A00ECCEDD /* Resources */,
-				53E0C1003E6C6A02BD9491A1 /* Embed Pods Frameworks */,
-				93DD04DE4478483CED53B8A6 /* Copy Pods Resources */,
+				8DDC4C6DF05442AA567571BF /*  Embed Pods Frameworks */,
+				18899EE5D972B51B8DBDFFA1 /*  Copy Pods Resources */,
+				765DBF39FEB673067FD60370 /*  Embed Pods Frameworks */,
+				CB5C2FA98A5B4E4DB8C2145B /*  Copy Pods Resources */,
+				55FFCF6F36F2C64D9253D346 /*  Embed Pods Frameworks */,
+				DAD026597E28F684022D1DDC /*  Copy Pods Resources */,
+				F54F0540FDCF05F7720FDEF7 /* 📦 Embed Pods Frameworks */,
+				70E2907B34C67C151787B03D /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -372,6 +435,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F87F3B51CE498B500181826 /* StripePaymentViewController.xib in Resources */,
 				2FA73EE41CD8B15A00ECCEDD /* LaunchScreen.storyboard in Resources */,
 				2FA73EE11CD8B15A00ECCEDD /* Assets.xcassets in Resources */,
 				2FA73F0E1CD90E5C00ECCEDD /* HomeViewController.xib in Resources */,
@@ -379,38 +443,24 @@
 				2F8EEE781CE0CC0D00223AA1 /* MemberListViewController.xib in Resources */,
 				2FC5B7681CE0A5B100A821FC /* MainMenuHeader.xib in Resources */,
 				2FA73EDF1CD8B15A00ECCEDD /* Main.storyboard in Resources */,
+				2F87F3AC1CE472F200181826 /* GoogleService-Info.plist in Resources */,
 				2FC5B7661CE0A0EE00A821FC /* MainMenuViewController.xib in Resources */,
-				2FA73F2F1CDA138800ECCEDD /* GoogleService-Info.plist in Resources */,
 				2F8EEE7E1CE1F01E00223AA1 /* RegisterViewController.xib in Resources */,
+				2FB5ED921CE614220075D2E1 /* PayPalViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		53E0C1003E6C6A02BD9491A1 /* Embed Pods Frameworks */ = {
+		18899EE5D972B51B8DBDFFA1 /*  Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-signinDemo/Pods-signinDemo-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		93DD04DE4478483CED53B8A6 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
+			name = " Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -418,19 +468,169 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-signinDemo/Pods-signinDemo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		EDC0A407BCA901D6FDC86BDE /* Check Pods Manifest.lock */ = {
+		4639F9C9E100D8D85C4D87F9 /*  Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = " Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		55A3CAAEAB4CC2215D88CB67 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		55FFCF6F36F2C64D9253D346 /*  Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = " Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-signinDemo/Pods-signinDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		70E2907B34C67C151787B03D /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-signinDemo/Pods-signinDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		765DBF39FEB673067FD60370 /*  Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = " Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-signinDemo/Pods-signinDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		807A163CCA119D7C43473B07 /*  Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = " Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8DDC4C6DF05442AA567571BF /*  Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = " Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-signinDemo/Pods-signinDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA9C5D677C477B595F1F5822 /*  Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = " Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CB5C2FA98A5B4E4DB8C2145B /*  Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = " Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-signinDemo/Pods-signinDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DAD026597E28F684022D1DDC /*  Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = " Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-signinDemo/Pods-signinDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F54F0540FDCF05F7720FDEF7 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-signinDemo/Pods-signinDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -451,9 +651,13 @@
 				2FC5B7651CE0A0EE00A821FC /* MainMenuViewController.m in Sources */,
 				2FA73ED91CD8B15A00ECCEDD /* AppDelegate.m in Sources */,
 				2F8EEE7D1CE1F01E00223AA1 /* RegisterViewController.m in Sources */,
+				2FB5ED911CE614220075D2E1 /* PayPalViewController.m in Sources */,
 				2FA73ED61CD8B15A00ECCEDD /* main.m in Sources */,
+				2F87F3B41CE498B500181826 /* StripePaymentViewController.m in Sources */,
 				2FA73F0D1CD90E5C00ECCEDD /* HomeViewController.m in Sources */,
 				2F7EEE481CE34496009A6F89 /* ValidationItem.m in Sources */,
+				2FB5ED831CE60F010075D2E1 /* PayPalHandler.m in Sources */,
+				2F87F3AF1CE4842600181826 /* StripeHandler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -561,7 +765,7 @@
 		};
 		2FA73EE91CD8B15A00ECCEDD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A5F8E266B06FB196527D9AB4 /* Pods-signinDemo.debug.xcconfig */;
+			baseConfigurationReference = 60D0614A6190A567FF13FD05 /* Pods-signinDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -585,7 +789,7 @@
 		};
 		2FA73EEA1CD8B15A00ECCEDD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2928F23525C328C21798D6CD /* Pods-signinDemo.release.xcconfig */;
+			baseConfigurationReference = A1AEC044A1D78DEB8F581C40 /* Pods-signinDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_ARC = YES;

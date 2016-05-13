@@ -12,6 +12,8 @@ target 'signinDemo' do
     pod 'SWRevealViewController', '~> 2.3'
     pod 'SPXDataValidators', '~> 1.4'
     pod 'JDFTooltips', '~> 1.1'
+    pod 'Stripe'
+    pod 'PayPal-iOS-SDK'
 
 end
 

@@ -17,6 +17,7 @@
 + (SWRevealViewController *) setupTabBarWithDrawerWithNavigationBar;
 + (UITabBarController *) setupTabBarWithoutDrawerWithNavigationBar;
 + (UITabBarController *) setupTabBarWithoutDrawerWithoutNavigationBar;
++(void)setPaddingTextField:(UITextField*)textField padding:(NSUInteger)padding toLeft:(BOOL)left;
 @property (weak, nonatomic) NSUserDefaults *preferences;
 
 

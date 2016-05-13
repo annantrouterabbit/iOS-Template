@@ -34,6 +34,9 @@
     
     // Override point for customization after application launch.
     [FBSDKLoginButton class];
+    
+    //
+    [Stripe setDefaultPublishableKey:STRIPE_DEV_APIKEY];
     return YES;
 }
 

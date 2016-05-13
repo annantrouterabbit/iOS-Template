@@ -36,7 +36,9 @@ typedef NS_ENUM(int, validatorTypes){
     kFormValidatorDateTime,
     kFormValidatorListingType,
     kFormValidatorNonEmpty,
-    kFormValidatorCatchAll
+    kFormValidatorCatchAll,
+    kFormValidatorCVC,
+    kFormValidatorCardNumber
 };
 
 typedef NS_ENUM(int, validationResult) {

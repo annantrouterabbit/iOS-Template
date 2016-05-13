@@ -8,6 +8,7 @@
 
 #import "MainMenuViewController.h"
 #import "LoginViewController.h"
+#import "StripePaymentViewController.h"
 
 @interface MainMenuViewController ()
 
@@ -19,7 +20,7 @@
     [super viewDidLoad];
     self.menuItems = @[NSLocalizedString(@"Menu Item 1",@""),
                        NSLocalizedString(@"Menu Item 2",@""),
-                       NSLocalizedString(@"Menu Item 3",@""),
+                       NSLocalizedString(@"Make Payment",@""),
                        NSLocalizedString(@"Logout",@"")];
     [self setupTable];
     // Do any additional setup after loading the view from its nib.
@@ -27,7 +28,7 @@
 
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
-    SWRevealViewController *revealController = self.revealViewController;
+//    SWRevealViewController *revealController = self.revealViewController;
 //    [self.view addGestureRecognizer:revealController.panGestureRecognizer];
     [self refreshHeader];
     
@@ -81,8 +82,11 @@
         }
         case 2:
         {
-            NSLog(@"Menu Item 3 is selected");
-            
+            StripePaymentViewController *stripePayment = [[StripePaymentViewController alloc]initWithNibName:@"StripePaymentViewController" bundle:nil
+                                                         ];
+            SWRevealViewController *revealViewController = (SWRevealViewController*)self.parentViewController;
+            [((UINavigationController*)((UITabBarController*)revealViewController.frontViewController).selectedViewController) pushViewController:stripePayment animated:NO];
+            [revealViewController revealToggleAnimated:YES];
             break;
         }
         case 3:
@@ -94,7 +98,8 @@
             NSLog(@"logintoken: %@", [preferences objectForKey:@"LoginToken"]);
             LoginViewController *lvc = [[LoginViewController alloc]initWithNibName:@"LoginView" bundle:nil];
             UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:lvc];
-            [self presentViewController:navigationController animated:YES completion: nil];
+            UIWindow *keyWindow = [UIApplication sharedApplication].keyWindow;
+            keyWindow.rootViewController = navigationController;
             break;
         }
         default:

@@ -76,5 +76,15 @@
 
 }
 
++(void)setPaddingTextField:(UITextField*)textField padding:(NSUInteger)padding toLeft:(BOOL)left{
+    UIView *paddingView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, padding, 42)];
+    if(left){
+        textField.leftView = paddingView;
+        textField.leftViewMode = UITextFieldViewModeAlways;
+    }else{
+        textField.rightView = paddingView;
+        textField.rightViewMode = UITextFieldViewModeAlways;
+    }
+}
 
 @end

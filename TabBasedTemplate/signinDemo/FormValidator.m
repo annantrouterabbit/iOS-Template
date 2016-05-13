@@ -18,6 +18,7 @@ static NSString *passwordRegex = @"^[A-Za-z0-9!#%\\&'*+=?\\^_`{|}~$-]{5,}$";
 static NSString *birthdayRegex = @"^(19|20)\\d\\d-(0[1-9]|1[012])-(0[1-9]|[12][0-9]|3[01])$";
 static NSString *last4SSNRegex = @"^[0-9]{4}$";
 static NSString *streetRegex = @"^[A-Za-z0-9'.#, -]{2,}$";//@"^([A-Za-z0-9'.#, -]|\\u2013){2,}$";
+static NSString *cvc = @"^[0-9]{3}$";
 static NSString *localityRegex = @"^[A-Za-z0-9'. -]{2,}$";
 static NSString *regionRegex = @"^[A-Za-z]{2}$";
 static NSString *postalCodeRegex= @"^\\d{5}$";
@@ -36,6 +37,7 @@ static NSString *datetimeRegex = @"^(0[1-9]|1[012])-([012][0-9]|3[012])-2[0-9]{3
 static NSString *listingType = @"^Product\\/Service$";
 static NSString *nonEmptyRegex = @"^[A-Za-z0-9!:#%;,\\&\\.'*+\\/=?\\^_`{|}~$()\"\\\\\\t\\s -]+$";
 static NSString *catchAllRegex = @"^[A-Za-z0-9!:#%;,\\&\\.'*+\\/=?\\^_`{|}~$()\"\\\\\\t\\s -]*$";
+static NSString *cardNumber = @"^[0-9]{16}";
 
 @interface FormValidator()
 
@@ -74,7 +76,9 @@ static NSString *catchAllRegex = @"^[A-Za-z0-9!:#%;,\\&\\.'*+\\/=?\\^_`{|}~$()\"
                        [SPXRegexDataValidator validatorWithExpression:datetimeRegex],
                        [SPXRegexDataValidator validatorWithExpression:listingType],
                        [SPXRegexDataValidator validatorWithExpression:nonEmptyRegex],
-                       [SPXRegexDataValidator validatorWithExpression:catchAllRegex]
+                       [SPXRegexDataValidator validatorWithExpression:catchAllRegex],
+                       [SPXRegexDataValidator validatorWithExpression:cvc],
+                       [SPXRegexDataValidator validatorWithExpression:cardNumber]
                        ];
     }
     return validators;
@@ -107,7 +111,9 @@ static NSString *catchAllRegex = @"^[A-Za-z0-9!:#%;,\\&\\.'*+\\/=?\\^_`{|}~$()\"
                             @"Enter a valid date and time",
                             @"Choose a listing type",
                             @"Enter anything",
-                            @"Catch all"
+                            @"Catch all",
+                            @"Enter 3 digits in CVC",
+                            @"Enter 16 digits card number"
                             ];
     }
     return defaultMessages;
@@ -140,7 +146,9 @@ static NSString *catchAllRegex = @"^[A-Za-z0-9!:#%;,\\&\\.'*+\\/=?\\^_`{|}~$()\"
                           @"Date and time are valid",
                           @"Listing type is valid",
                           @"This field is valid",
-                          @"Catch all is valid"
+                          @"Catch all is valid",
+                          @"CVC is valid",
+                          @"Card number is valid"
                           ];
     }
     return validMessages;
@@ -173,7 +181,9 @@ static NSString *catchAllRegex = @"^[A-Za-z0-9!:#%;,\\&\\.'*+\\/=?\\^_`{|}~$()\"
                           @"Date and time",
                           @"Listing Type must be a provided value",
                           @"This field cannot be left blank",
-                          @"Catch all can't be invalid"
+                          @"Catch all can't be invalid",
+                            @"CVC should contains 3 digits",
+                            @"Card number should contains 16 digits between 0-9"
                           ];
     }
     return invalidMessages;
