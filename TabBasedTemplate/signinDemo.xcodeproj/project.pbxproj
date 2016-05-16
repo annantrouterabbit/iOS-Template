@@ -13,8 +13,8 @@
 		2F7EEE481CE34496009A6F89 /* ValidationItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F7EEE461CE34496009A6F89 /* ValidationItem.m */; };
 		2F87F3AC1CE472F200181826 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2F87F3AB1CE472F200181826 /* GoogleService-Info.plist */; };
 		2F87F3AF1CE4842600181826 /* StripeHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F87F3AE1CE4842600181826 /* StripeHandler.m */; };
-		2F87F3B41CE498B500181826 /* StripePaymentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F87F3B21CE498B500181826 /* StripePaymentViewController.m */; };
-		2F87F3B51CE498B500181826 /* StripePaymentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F87F3B31CE498B500181826 /* StripePaymentViewController.xib */; };
+		2F87F3B41CE498B500181826 /* StripeCreateCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F87F3B21CE498B500181826 /* StripeCreateCardViewController.m */; };
+		2F87F3B51CE498B500181826 /* StripeCreateCardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F87F3B31CE498B500181826 /* StripeCreateCardViewController.xib */; };
 		2F87F3B81CE4F1F000181826 /* PassKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F87F3B71CE4F1F000181826 /* PassKit.framework */; };
 		2F8EEE771CE0CC0D00223AA1 /* MemberListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F8EEE751CE0CC0D00223AA1 /* MemberListViewController.m */; };
 		2F8EEE781CE0CC0D00223AA1 /* MemberListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F8EEE761CE0CC0D00223AA1 /* MemberListViewController.xib */; };
@@ -62,9 +62,9 @@
 		2F87F3AB1CE472F200181826 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2F87F3AD1CE4842600181826 /* StripeHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StripeHandler.h; sourceTree = "<group>"; };
 		2F87F3AE1CE4842600181826 /* StripeHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StripeHandler.m; sourceTree = "<group>"; };
-		2F87F3B11CE498B500181826 /* StripePaymentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StripePaymentViewController.h; sourceTree = "<group>"; };
-		2F87F3B21CE498B500181826 /* StripePaymentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StripePaymentViewController.m; sourceTree = "<group>"; };
-		2F87F3B31CE498B500181826 /* StripePaymentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StripePaymentViewController.xib; sourceTree = "<group>"; };
+		2F87F3B11CE498B500181826 /* StripeCreateCardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StripeCreateCardViewController.h; sourceTree = "<group>"; };
+		2F87F3B21CE498B500181826 /* StripeCreateCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StripeCreateCardViewController.m; sourceTree = "<group>"; };
+		2F87F3B31CE498B500181826 /* StripeCreateCardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StripeCreateCardViewController.xib; sourceTree = "<group>"; };
 		2F87F3B71CE4F1F000181826 /* PassKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PassKit.framework; path = System/Library/Frameworks/PassKit.framework; sourceTree = SDKROOT; };
 		2F8EEE741CE0CC0D00223AA1 /* MemberListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemberListViewController.h; sourceTree = "<group>"; };
 		2F8EEE751CE0CC0D00223AA1 /* MemberListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemberListViewController.m; sourceTree = "<group>"; };
@@ -186,9 +186,9 @@
 		2F87F3B61CE498F400181826 /* StripePayment */ = {
 			isa = PBXGroup;
 			children = (
-				2F87F3B11CE498B500181826 /* StripePaymentViewController.h */,
-				2F87F3B21CE498B500181826 /* StripePaymentViewController.m */,
-				2F87F3B31CE498B500181826 /* StripePaymentViewController.xib */,
+				2F87F3B11CE498B500181826 /* StripeCreateCardViewController.h */,
+				2F87F3B21CE498B500181826 /* StripeCreateCardViewController.m */,
+				2F87F3B31CE498B500181826 /* StripeCreateCardViewController.xib */,
 			);
 			name = StripePayment;
 			sourceTree = "<group>";
@@ -435,7 +435,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F87F3B51CE498B500181826 /* StripePaymentViewController.xib in Resources */,
+				2F87F3B51CE498B500181826 /* StripeCreateCardViewController.xib in Resources */,
 				2FA73EE41CD8B15A00ECCEDD /* LaunchScreen.storyboard in Resources */,
 				2FA73EE11CD8B15A00ECCEDD /* Assets.xcassets in Resources */,
 				2FA73F0E1CD90E5C00ECCEDD /* HomeViewController.xib in Resources */,
@@ -653,7 +653,7 @@
 				2F8EEE7D1CE1F01E00223AA1 /* RegisterViewController.m in Sources */,
 				2FB5ED911CE614220075D2E1 /* PayPalViewController.m in Sources */,
 				2FA73ED61CD8B15A00ECCEDD /* main.m in Sources */,
-				2F87F3B41CE498B500181826 /* StripePaymentViewController.m in Sources */,
+				2F87F3B41CE498B500181826 /* StripeCreateCardViewController.m in Sources */,
 				2FA73F0D1CD90E5C00ECCEDD /* HomeViewController.m in Sources */,
 				2F7EEE481CE34496009A6F89 /* ValidationItem.m in Sources */,
 				2FB5ED831CE60F010075D2E1 /* PayPalHandler.m in Sources */,

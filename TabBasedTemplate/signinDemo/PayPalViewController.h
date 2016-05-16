@@ -11,12 +11,12 @@
 
 @interface PayPalViewController : UIViewController<UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UIButton *makePaymentButton;
-@property (weak, nonatomic) IBOutlet UITextField *expiryDate;
-@property (weak, nonatomic) IBOutlet UITextField *cardHolderName;
-@property (weak, nonatomic) IBOutlet UITextField *cardNumber;
-@property (weak, nonatomic) IBOutlet UITextField *cardCVC;
+
+@property (weak, nonatomic) IBOutlet UITextField *amount;
 @property int noOfTextFields;
 - (IBAction)makePaymentClicked:(id)sender;
+@property (weak, nonatomic) IBOutlet UITextField *currencyType;
+@property (weak, nonatomic) IBOutlet UITextView *paymentDescription;
 @property FormValidator *formValidator;
 
 

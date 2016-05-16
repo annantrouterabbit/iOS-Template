@@ -9,14 +9,15 @@
 #import <UIKit/UIKit.h>
 #import "FormValidator.h"
 
-@interface StripePaymentViewController : UIViewController<UITextFieldDelegate>
-@property (weak, nonatomic) IBOutlet UIButton *makePaymentButton;
+@interface StripeCreateCardViewController : UIViewController<UITextFieldDelegate>
+@property (weak, nonatomic) IBOutlet UIButton *createCardButton;
 @property (weak, nonatomic) IBOutlet UITextField *expiryDate;
 @property (weak, nonatomic) IBOutlet UITextField *cardHolderName;
 @property (weak, nonatomic) IBOutlet UITextField *cardNumber;
 @property (weak, nonatomic) IBOutlet UITextField *cardCVC;
 @property int noOfTextFields;
-- (IBAction)makePaymentClicked:(id)sender;
+- (IBAction)createCardClicked:(id)sender;
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 @property FormValidator *formValidator;
 
 @end

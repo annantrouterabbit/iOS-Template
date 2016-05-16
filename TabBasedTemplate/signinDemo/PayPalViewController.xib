@@ -7,11 +7,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PayPalViewController">
             <connections>
-                <outlet property="cardCVC" destination="HJe-zs-5AR" id="1ai-u5-ENk"/>
-                <outlet property="cardHolderName" destination="evE-RO-F3s" id="G5s-vT-Sf0"/>
-                <outlet property="cardNumber" destination="r7D-UM-JVc" id="5sn-x2-vMy"/>
-                <outlet property="expiryDate" destination="W19-s0-uDU" id="in2-a5-ybO"/>
+                <outlet property="amount" destination="evE-RO-F3s" id="VHx-Yh-PSP"/>
+                <outlet property="currencyType" destination="7AX-G4-XzB" id="dYI-zc-EVA"/>
                 <outlet property="makePaymentButton" destination="fLd-Yk-T4r" id="BFy-pX-lLy"/>
+                <outlet property="paymentDescription" destination="irE-Eo-s9q" id="xQ0-Bt-fHj"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -20,41 +19,41 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nFX-vw-PE8">
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="onDrag" translatesAutoresizingMaskIntoConstraints="NO" id="nFX-vw-PE8">
                     <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5cY-Tp-HGA">
                             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             <subviews>
-                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Card Number" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r7D-UM-JVc">
-                                    <rect key="frame" x="23" y="144" width="554" height="40"/>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Amount" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="evE-RO-F3s" userLabel="Amount">
+                                    <rect key="frame" x="23" y="64" width="403" height="40"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <constraints>
-                                        <constraint firstAttribute="height" constant="40" id="ZCE-1S-ezW"/>
-                                    </constraints>
-                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                    <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
-                                </textField>
-                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="249" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Date of Expiry" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="W19-s0-uDU">
-                                    <rect key="frame" x="23" y="224" width="491" height="40"/>
-                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
-                                    <constraints>
-                                        <constraint firstAttribute="height" constant="40" id="D8w-xm-Kxu"/>
-                                    </constraints>
-                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                    <textInputTraits key="textInputTraits" returnKeyType="next"/>
-                                </textField>
-                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="CVC" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HJe-zs-5AR">
-                                    <rect key="frame" x="538" y="224" width="39" height="40"/>
-                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <constraints>
-                                        <constraint firstAttribute="height" constant="40" id="tcD-72-9Wk"/>
+                                        <constraint firstAttribute="height" constant="40" id="7RV-29-Kx0"/>
                                     </constraints>
                                     <nil key="textColor"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                    <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="next" secureTextEntry="YES"/>
+                                    <textInputTraits key="textInputTraits" autocapitalizationType="words" keyboardType="decimalPad" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
                                 </textField>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Currency Type" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7AX-G4-XzB">
+                                    <rect key="frame" x="456" y="64" width="117" height="40"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="zO9-Sd-jZY"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Description about payment" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="irE-Eo-s9q">
+                                    <rect key="frame" x="23" y="142" width="550" height="87"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="87" id="X2m-c0-mwC"/>
+                                    </constraints>
+                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                </textView>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fLd-Yk-T4r">
                                     <rect key="frame" x="233" y="304" width="135" height="30"/>
                                     <color key="backgroundColor" red="0.36470589040000001" green="0.82352948189999997" blue="0.8980392814" alpha="1" colorSpace="deviceRGB"/>
@@ -68,33 +67,20 @@
                                         <action selector="makePaymentClicked:" destination="-1" eventType="touchUpInside" id="geV-Nn-KkM"/>
                                     </connections>
                                 </button>
-                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Card Holder's Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="evE-RO-F3s">
-                                    <rect key="frame" x="23" y="64" width="554" height="40"/>
-                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <constraints>
-                                        <constraint firstAttribute="height" constant="40" id="7RV-29-Kx0"/>
-                                    </constraints>
-                                    <nil key="textColor"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                    <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
-                                </textField>
                             </subviews>
                             <color key="backgroundColor" red="0.13725490870000001" green="0.69019609689999994" blue="0.90588241820000004" alpha="1" colorSpace="deviceRGB"/>
                             <constraints>
-                                <constraint firstItem="W19-s0-uDU" firstAttribute="top" secondItem="r7D-UM-JVc" secondAttribute="bottom" constant="40" id="13n-10-rea"/>
-                                <constraint firstAttribute="trailing" secondItem="evE-RO-F3s" secondAttribute="trailing" constant="23" id="3OF-85-Tvc"/>
-                                <constraint firstItem="r7D-UM-JVc" firstAttribute="leading" secondItem="5cY-Tp-HGA" secondAttribute="leading" constant="23" id="4af-YL-xdF"/>
-                                <constraint firstAttribute="trailing" secondItem="HJe-zs-5AR" secondAttribute="trailing" constant="23" id="ALv-4X-P7W"/>
-                                <constraint firstAttribute="trailing" secondItem="r7D-UM-JVc" secondAttribute="trailing" constant="23" id="J3p-Yo-ABZ"/>
-                                <constraint firstItem="W19-s0-uDU" firstAttribute="leading" secondItem="5cY-Tp-HGA" secondAttribute="leading" constant="23" id="K17-Ok-vVM"/>
-                                <constraint firstItem="HJe-zs-5AR" firstAttribute="top" secondItem="r7D-UM-JVc" secondAttribute="bottom" constant="40" id="U7M-oB-tgN"/>
+                                <constraint firstItem="irE-Eo-s9q" firstAttribute="top" secondItem="evE-RO-F3s" secondAttribute="bottom" constant="38" id="MxA-U3-yrl"/>
+                                <constraint firstAttribute="trailing" secondItem="irE-Eo-s9q" secondAttribute="trailing" constant="27" id="Thv-Fl-VDz"/>
                                 <constraint firstItem="fLd-Yk-T4r" firstAttribute="centerX" secondItem="5cY-Tp-HGA" secondAttribute="centerX" id="UxB-n0-KGc"/>
+                                <constraint firstItem="7AX-G4-XzB" firstAttribute="top" secondItem="5cY-Tp-HGA" secondAttribute="top" constant="64" id="YjB-bM-XYT"/>
                                 <constraint firstAttribute="bottom" secondItem="fLd-Yk-T4r" secondAttribute="bottom" constant="266" id="hSK-kL-Fon"/>
+                                <constraint firstAttribute="trailing" secondItem="7AX-G4-XzB" secondAttribute="trailing" constant="27" id="hyH-Oi-Ceb"/>
                                 <constraint firstItem="evE-RO-F3s" firstAttribute="top" secondItem="5cY-Tp-HGA" secondAttribute="top" constant="64" id="mOw-tF-kNK"/>
-                                <constraint firstItem="r7D-UM-JVc" firstAttribute="top" secondItem="evE-RO-F3s" secondAttribute="bottom" constant="40" id="mrc-sJ-qZ4"/>
-                                <constraint firstItem="fLd-Yk-T4r" firstAttribute="top" secondItem="W19-s0-uDU" secondAttribute="bottom" constant="40" id="up8-ic-54K"/>
-                                <constraint firstItem="HJe-zs-5AR" firstAttribute="leading" secondItem="W19-s0-uDU" secondAttribute="trailing" constant="24" id="xZo-6I-lT4"/>
+                                <constraint firstItem="7AX-G4-XzB" firstAttribute="leading" secondItem="evE-RO-F3s" secondAttribute="trailing" constant="30" id="mqd-yn-uIq"/>
+                                <constraint firstItem="irE-Eo-s9q" firstAttribute="leading" secondItem="5cY-Tp-HGA" secondAttribute="leading" constant="23" id="nEB-Wb-Zw7"/>
                                 <constraint firstItem="evE-RO-F3s" firstAttribute="leading" secondItem="5cY-Tp-HGA" secondAttribute="leading" constant="23" id="y9G-ul-Mxf"/>
+                                <constraint firstItem="irE-Eo-s9q" firstAttribute="trailing" secondItem="7AX-G4-XzB" secondAttribute="trailing" id="zvr-9P-aV4"/>
                             </constraints>
                         </view>
                     </subviews>
@@ -102,6 +88,7 @@
                         <constraint firstItem="5cY-Tp-HGA" firstAttribute="width" secondItem="nFX-vw-PE8" secondAttribute="width" id="FOM-l9-wob"/>
                         <constraint firstItem="5cY-Tp-HGA" firstAttribute="top" secondItem="nFX-vw-PE8" secondAttribute="top" id="IGN-6n-3fa"/>
                         <constraint firstItem="5cY-Tp-HGA" firstAttribute="leading" secondItem="nFX-vw-PE8" secondAttribute="leading" id="arA-X6-X1C"/>
+                        <constraint firstItem="5cY-Tp-HGA" firstAttribute="centerY" secondItem="nFX-vw-PE8" secondAttribute="centerY" id="d3z-yZ-7gT"/>
                         <constraint firstAttribute="trailing" secondItem="5cY-Tp-HGA" secondAttribute="trailing" id="nmh-cF-8nt"/>
                         <constraint firstAttribute="bottom" secondItem="5cY-Tp-HGA" secondAttribute="bottom" id="urY-yR-btP"/>
                     </constraints>

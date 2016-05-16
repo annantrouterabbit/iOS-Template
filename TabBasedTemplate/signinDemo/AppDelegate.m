@@ -11,6 +11,8 @@
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import <FBSDKLoginKit/FBSDKLoginKit.h>
 #import "UtilityClass.h"
+#import "PayPalHandler.h"
+#import <PayPalMobile.h>
 
 @interface AppDelegate ()
 
@@ -31,10 +33,10 @@
      //connect your AppDelegate to the facebook's FBSDKApplicationDelegate
     [[FBSDKApplicationDelegate sharedInstance] application:application
                              didFinishLaunchingWithOptions:launchOptions];
-    
     // Override point for customization after application launch.
     [FBSDKLoginButton class];
-    
+    [PayPalMobile initializeWithClientIdsForEnvironments:@{PayPalEnvironmentProduction : PAYPAL_DEV_APIKEY,
+                                                           PayPalEnvironmentSandbox : PAYPAL_PROD_APIKEY}];
     //
     [Stripe setDefaultPublishableKey:STRIPE_DEV_APIKEY];
     return YES;

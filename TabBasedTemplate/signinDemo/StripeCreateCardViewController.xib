@@ -5,13 +5,14 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StripePaymentViewController">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StripeCreateCardViewController">
             <connections>
                 <outlet property="cardCVC" destination="HJe-zs-5AR" id="1ai-u5-ENk"/>
                 <outlet property="cardHolderName" destination="evE-RO-F3s" id="G5s-vT-Sf0"/>
                 <outlet property="cardNumber" destination="r7D-UM-JVc" id="5sn-x2-vMy"/>
+                <outlet property="createCardButton" destination="fLd-Yk-T4r" id="Fpv-xP-ys8"/>
                 <outlet property="expiryDate" destination="W19-s0-uDU" id="in2-a5-ybO"/>
-                <outlet property="makePaymentButton" destination="fLd-Yk-T4r" id="BFy-pX-lLy"/>
+                <outlet property="scrollView" destination="nFX-vw-PE8" id="Tg8-UC-LZY"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -20,7 +21,7 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nFX-vw-PE8">
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="onDrag" translatesAutoresizingMaskIntoConstraints="NO" id="nFX-vw-PE8">
                     <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5cY-Tp-HGA">
@@ -61,11 +62,11 @@
                                     <constraints>
                                         <constraint firstAttribute="width" constant="135" id="iDL-YM-Fwy"/>
                                     </constraints>
-                                    <state key="normal" title="Make Payment">
+                                    <state key="normal" title="Create Card">
                                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </state>
                                     <connections>
-                                        <action selector="makePaymentClicked:" destination="-1" eventType="touchUpInside" id="geV-Nn-KkM"/>
+                                        <action selector="createCardClicked:" destination="-1" eventType="touchUpInside" id="rbh-Zs-hc6"/>
                                     </connections>
                                 </button>
                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Card Holder's Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="evE-RO-F3s">

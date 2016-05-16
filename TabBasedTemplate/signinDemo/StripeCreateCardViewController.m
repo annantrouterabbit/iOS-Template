@@ -6,15 +6,16 @@
 //  Copyright © 2016 Annant Gupta. All rights reserved.
 //
 
-#import "StripePaymentViewController.h"
+#import "StripeCreateCardViewController.h"
 #import "StripeHandler.h"
 #import "UtilityClass.h"
 
-@interface StripePaymentViewController ()<StripeHandlerDelegate>
+@interface StripeCreateCardViewController ()<StripeHandlerDelegate>
 @property StripeHandler *stripeHandler;
+@property UITextField *selectedTextField;
 @end
 
-@implementation StripePaymentViewController
+@implementation StripeCreateCardViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -22,7 +23,7 @@
     self.title = @"Create Card";
     [self.navigationItem.backBarButtonItem setTitle:@""];
     self.formValidator=[[FormValidator alloc]initWithFormInputs:@[[NSNumber numberWithInt:kFormValidatorFirstName], [NSNumber numberWithInt:kFormValidatorCardNumber],[NSNumber numberWithInt:kFormValidatorNonEmpty],[NSNumber numberWithInt:kFormValidatorCVC]]];
-    self.makePaymentButton.enabled = false;
+    self.createCardButton.enabled = false;
     self.noOfTextFields = 4;
     
     self.cardHolderName.delegate = self;
@@ -43,6 +44,15 @@
     // Do any additional setup after loading the view from its nib.
     self.stripeHandler = [[StripeHandler alloc] init];
     self.stripeHandler.delegate = self;
+    
+    UITapGestureRecognizer *tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapGestureRecognizerHandler:)];
+    [self.scrollView addGestureRecognizer:tapGestureRecognizer];
+}
+
+-(void)tapGestureRecognizerHandler:(id)sender{
+    if(self.selectedTextField && [self.selectedTextField isFirstResponder]){
+        [self.selectedTextField resignFirstResponder];
+    }
 }
 
 -(void)setupDatePicker{
@@ -56,6 +66,10 @@
     expiryDatePicker.datePickerMode = UIDatePickerModeDate;
     self.expiryDate.inputView = expiryDatePicker;
 
+}
+
+-(void)textFieldDidBeginEditing:(UITextField *)textField{
+    self.selectedTextField = textField;
 }
 
 -(BOOL)textFieldShouldReturn:(UITextField *)textField{
@@ -81,7 +95,7 @@
 
     NSArray *inputValues = @[self.cardHolderName.text, self.cardNumber.text, self.expiryDate.text, self.cardCVC.text];
     
-    self.makePaymentButton.enabled = [self.formValidator validateFormWithInputValues:inputValues inputStatus:^(int idx, validationResult result) {
+    self.createCardButton.enabled = [self.formValidator validateFormWithInputValues:inputValues inputStatus:^(int idx, validationResult result) {
         UITextField *textField = (UITextField *)[self.view viewWithTag:idx+1];
         textField.layer.masksToBounds=YES;
         textField.layer.borderWidth= 1.0f;
@@ -134,7 +148,7 @@
 }
 */
 
-- (IBAction)makePaymentClicked:(id)sender{
+- (IBAction)createCardClicked:(id)sender{
     NSDate *expiryDate = [(UIDatePicker*)self.expiryDate.inputView date];
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc]init];
     [dateFormatter setDateFormat:@"MM"];

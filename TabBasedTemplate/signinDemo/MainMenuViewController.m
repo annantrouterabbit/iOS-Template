@@ -8,7 +8,8 @@
 
 #import "MainMenuViewController.h"
 #import "LoginViewController.h"
-#import "StripePaymentViewController.h"
+#import "StripeCreateCardViewController.h"
+#import "PayPalViewController.h"
 
 @interface MainMenuViewController ()
 
@@ -77,12 +78,16 @@
             
         case 1:
         {
-            NSLog(@"Menu Item 2 is selected");
+            PayPalViewController *payPalViewController = [[PayPalViewController alloc] init];
+            SWRevealViewController *revealViewController = (SWRevealViewController*)self.parentViewController;
+            [((UINavigationController*)((UITabBarController*)revealViewController.frontViewController).selectedViewController) pushViewController:payPalViewController animated:NO];
+            [revealViewController revealToggleAnimated:YES];
+
             break;
         }
         case 2:
         {
-            StripePaymentViewController *stripePayment = [[StripePaymentViewController alloc]initWithNibName:@"StripePaymentViewController" bundle:nil
+            StripeCreateCardViewController *stripePayment = [[StripeCreateCardViewController alloc]initWithNibName:@"StripeCreateCardViewController" bundle:nil
                                                          ];
             SWRevealViewController *revealViewController = (SWRevealViewController*)self.parentViewController;
             [((UINavigationController*)((UITabBarController*)revealViewController.frontViewController).selectedViewController) pushViewController:stripePayment animated:NO];
